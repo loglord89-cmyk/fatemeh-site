@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fatemeh Mahdavian</title>
-<meta name="google-site-verification" content="qhwSWwW8y9a-KGgupgcL6P5LfI4_1KHwl2VvXL8kAH8" />
+<meta name="google-site-verification" content="<meta name="google-site-verification" content="xvBCd6BOS6ZZnH1yWiq-mGWX0wk9CCXKnycZg94soDo" />" />
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,3 +166,325 @@
       <div class="relative" id="langWrap">
         <button id="langBtn" type="button" class="ctl inline-flex h-11 items-center gap-1.5 rounded-full border border-line px-3 text-sm font-semibold" aria-haspopup="true" aria-expanded="false" aria-controls="langMenu" data-i18n-aria="aria.language">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3
+            <span id="langCode" class="font-mono" dir="ltr">EN</span>
+        </button>
+        <div id="langMenu" hidden class="absolute end-0 mt-2 w-60 max-h-[22rem] overflow-y-auto rounded-xl border border-line bg-surface p-1.5 shadow-lg z-50"></div>
+      </div>
+
+      <!-- Light / dark switcher -->
+      <button id="themeBtn" type="button" class="ctl inline-flex h-11 w-11 items-center justify-center rounded-full border border-line">
+        <svg id="iconMoon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg id="iconSun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+
+      <button id="menuBtn" type="button" class="ctl lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-line" aria-expanded="false" aria-controls="mobileNav" data-i18n-aria="aria.menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="lg:hidden border-t border-line bg-bg" hidden aria-label="Mobile">
+    <div class="wrap py-3 flex flex-col">
+      <a class="py-3 font-medium border-b border-line" href="#home" data-i18n="nav.home">Home</a>
+      <a class="py-3 font-medium border-b border-line" href="#about" data-i18n="nav.about">About</a>
+      <a class="py-3 font-medium border-b border-line" href="#courses" data-i18n="nav.courses">Registration</a>
+      <a class="py-3 font-medium border-b border-line" href="#resources" data-i18n="nav.resources">Resources</a>
+      <a class="py-3 font-medium border-b border-line" href="#homework" data-i18n="nav.homework">Homework</a>
+      <a href="https://www.instagram.com/fateme.mhv.elt/" target="_blank" rel="noopener" class="btn-gold mt-4 mb-2 inline-flex justify-center rounded-full px-5 py-3 font-semibold" data-i18n="cta.book">Book Consultation</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="home" class="py-12 md:py-20">
+  <div class="wrap grid gap-10 lg:grid-cols-12 lg:gap-12 items-center">
+    <div class="lg:col-span-9 min-w-0">
+      <p class="eyebrow mb-5" data-i18n="hero.eyebrow">English teacher · IELTS coach · Teacher trainer</p>
+      <h1 class="font-extrabold text-4xl sm:text-5xl lg:text-6xl" data-i18n-html="hero.h1">English that earns you the <span class="mark">band score</span> you need.</h1>
+      <p class="mt-6 text-lg text-muted max-w-xl" data-i18n="hero.lead">Hi, I'm Fatemeh. I help learners speak with confidence, write with structure and walk into the IELTS exam knowing exactly what the examiner is looking for. I also train new teachers to do the same in their own classrooms.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#courses" class="btn-gold inline-flex items-center rounded-full px-6 py-3.5 font-semibold" data-i18n="hero.explore">Register</a>
+        <a href="https://www.instagram.com/fateme.mhv.elt/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-ink/25 px-6 py-3.5 font-semibold hover:border-brand hover:text-brand">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <span dir="ltr">@fateme.mhv.elt</span>
+        </a>
+        <a href="https://www.linkedin.com/in/fateme-mahdavian-955844206/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-ink/25 px-6 py-3.5 font-semibold hover:border-brand hover:text-brand"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg><span dir="ltr">LinkedIn</span></a>
+        <a href="https://t.me/Englishwith_fatima" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full border border-ink/25 px-6 py-3.5 font-semibold hover:border-brand hover:text-brand"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg><span dir="ltr">Telegram</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-16 md:py-24 border-t border-line">
+  <div class="wrap grid gap-12 lg:grid-cols-12">
+    <div class="lg:col-span-5 min-w-0">
+      <figure class="relative mb-10 max-w-[300px] sm:max-w-[340px]">
+        <span class="absolute inset-0 translate-x-3 translate-y-3 rtl:-translate-x-3 rounded-2xl bg-gold" aria-hidden="true"></span>
+        <img src="data:image/jpeg;base64,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
+" alt="Fatemeh Mahdavian" class="w-full rounded-2xl border border-line object-cover shadow-md">
+      </figure>
+    </div>
+    <div class="lg:col-span-7 min-w-0">
+      <p class="eyebrow mb-3" data-i18n="about.eyebrow">About</p>
+      <h2 class="font-extrabold text-3xl sm:text-4xl" data-i18n="about.h2">Practical teaching, clear IELTS strategy and supportive mentoring.</h2>
+      <p class="mt-5 text-muted" data-i18n="about.p1">With years of classroom experience in English language teaching and IELTS preparation, I focus on building real communication skills alongside structured exam techniques.</p>
+      <p class="mt-4 text-muted" data-i18n="about.p2">Whether you are aiming for a target band score, building everyday fluency, or developing your teaching skills, every session is tailored to where you are right now.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COURSES / REGISTRATION ============ -->
+<section id="courses" class="py-16 md:py-24 border-t border-line">
+  <div class="wrap">
+    <p class="eyebrow mb-3" data-i18n="courses.eyebrow">Registration</p>
+    <h2 class="font-extrabold text-3xl sm:text-4xl" data-i18n="courses.h2">Start your learning journey.</h2>
+    <p class="mt-3 text-muted max-w-2xl" data-i18n="courses.lead">Reach out to book a consultation, ask about upcoming classes, or join a session tailored to your goals.</p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="https://www.instagram.com/fateme.mhv.elt/" target="_blank" rel="noopener" class="btn-gold inline-flex items-center rounded-full px-6 py-3.5 font-semibold" data-i18n="cta.book">Book Consultation</a>
+      <a href="https://t.me/Englishwith_fatima" target="_blank" rel="noopener" class="inline-flex items-center rounded-full border border-ink/25 px-6 py-3.5 font-semibold hover:border-brand hover:text-brand" data-i18n="courses.tg">Message on Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESOURCES ============ -->
+<section id="resources" class="py-16 md:py-24 border-t border-line">
+  <div class="wrap">
+    <p class="eyebrow mb-3" data-i18n="resources.eyebrow">Resources</p>
+    <h2 class="font-extrabold text-3xl sm:text-4xl" data-i18n="resources.h2">Study tips and channels.</h2>
+    <p class="mt-3 text-muted max-w-2xl" data-i18n="resources.lead">Follow along for weekly IELTS tips, vocabulary notes, and classroom resources.</p>
+    <div class="mt-8 grid gap-4 sm:grid-cols-3">
+      <a href="https://www.instagram.com/fateme.mhv.elt/" target="_blank" rel="noopener" class="rounded-2xl border border-line bg-surface p-6 hover:border-brand">
+        <p class="font-bold text-lg">Instagram</p>
+        <p class="mt-1 text-sm text-muted" dir="ltr">@fateme.mhv.elt</p>
+      </a>
+      <a href="https://t.me/Englishwith_fatima" target="_blank" rel="noopener" class="rounded-2xl border border-line bg-surface p-6 hover:border-brand">
+        <p class="font-bold text-lg">Telegram</p>
+        <p class="mt-1 text-sm text-muted" dir="ltr">@Englishwith_fatima</p>
+      </a>
+      <a href="https://www.linkedin.com/in/fateme-mahdavian-955844206/" target="_blank" rel="noopener" class="rounded-2xl border border-line bg-surface p-6 hover:border-brand">
+        <p class="font-bold text-lg">LinkedIn</p>
+        <p class="mt-1 text-sm text-muted" data-i18n="resources.li">Fatemeh Mahdavian</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOMEWORK ============ -->
+<section id="homework" class="py-16 md:py-24 border-t border-line">
+  <div class="wrap">
+    <p class="eyebrow mb-3" data-i18n="homework.eyebrow">Homework</p>
+    <h2 class="font-extrabold text-3xl sm:text-4xl" data-i18n="homework.h2">Assignments and practice.</h2>
+    <p class="mt-3 text-muted max-w-2xl" data-i18n="homework.lead">Completed tasks and weekly practice prompts can be shared directly during class or via message.</p>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-line py-10 text-sm text-muted">
+  <div class="wrap flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p data-i18n="footer.copy">Fatemeh Mahdavian · ELT &amp; IELTS</p>
+    <div class="flex items-center gap-5">
+      <a href="https://www.instagram.com/fateme.mhv.elt/" target="_blank" rel="noopener" class="hover:text-brand">Instagram</a>
+      <a href="https://t.me/Englishwith_fatima" target="_blank" rel="noopener" class="hover:text-brand">Telegram</a>
+      <a href="https://www.linkedin.com/in/fateme-mahdavian-955844206/" target="_blank" rel="noopener" class="hover:text-brand">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var I18N = {
+    en: {
+      brand: "Fatemeh Mahdavian",
+      "nav.home": "Home",
+      "nav.about": "About",
+      "nav.courses": "Registration",
+      "nav.resources": "Resources",
+      "nav.homework": "Homework",
+      "cta.book": "Book Consultation",
+      "aria.home": "Home",
+      "aria.language": "Select language",
+      "aria.menu": "Toggle menu",
+      "hero.eyebrow": "English teacher · IELTS coach · Teacher trainer",
+      "hero.h1": 'English that earns you the <span class="mark">band score</span> you need.',
+      "hero.lead": "Hi, I'm Fatemeh. I help learners speak with confidence, write with structure and walk into the IELTS exam knowing exactly what the examiner is looking for. I also train new teachers to do the same in their own classrooms.",
+      "hero.explore": "Register",
+      "about.eyebrow": "About",
+      "about.h2": "Practical teaching, clear IELTS strategy and supportive mentoring.",
+      "about.p1": "With years of classroom experience in English language teaching and IELTS preparation, I focus on building real communication skills alongside structured exam techniques.",
+      "about.p2": "Whether you are aiming for a target band score, building everyday fluency, or developing your teaching skills, every session is tailored to where you are right now.",
+      "courses.eyebrow": "Registration",
+      "courses.h2": "Start your learning journey.",
+      "courses.lead": "Reach out to book a consultation, ask about upcoming classes, or join a session tailored to your goals.",
+      "courses.tg": "Message on Telegram",
+      "resources.eyebrow": "Resources",
+      "resources.h2": "Study tips and channels.",
+      "resources.lead": "Follow along for weekly IELTS tips, vocabulary notes, and classroom resources.",
+      "resources.li": "Fatemeh Mahdavian",
+      "homework.eyebrow": "Homework",
+      "homework.h2": "Assignments and practice.",
+      "homework.lead": "Completed tasks and weekly practice prompts can be shared directly during class or via message.",
+      "footer.copy": "Fatemeh Mahdavian · ELT & IELTS"
+    },
+    fa: {
+      brand: "فاطمه مهدویان",
+      "nav.home": "خانه",
+      "nav.about": "درباره من",
+      "nav.courses": "ثبت‌نام",
+      "nav.resources": "منابع",
+      "nav.homework": "تکالیف",
+      "cta.book": "رزرو مشاوره",
+      "aria.home": "صفحه اصلی",
+      "aria.language": "انتخاب زبان",
+      "aria.menu": "باز و بسته کردن منو",
+      "hero.eyebrow": "مدرس زبان انگلیسی · کوچ آیلتس · تربیت مدرس",
+      "hero.h1": 'انگلیسی‌ای که <span class="mark">نمره آیلتس</span> دلخواهتان را می‌سازد.',
+      "hero.lead": "سلام، فاطمه هستم. به زبان‌آموزان کمک می‌کنم با اعتمادبه‌نفس صحبت کنند، منظم بنویسند و با شناخت دقیق معیارهای آزمون آیلتس سر جلسه حاضر شوند؛ همچنین مدرسان جدید را برای تدریس مؤثر توانمند می‌کنم.",
+      "hero.explore": "ثبت‌نام",
+      "about.eyebrow": "درباره من",
+      "about.h2": "آموزش کاربردی، استراتژی شفاف آیلتس و همراهی قدم‌به‌قدم.",
+      "about.p1": "با سال‌ها تجربه تدریس زبان انگلیسی و آمادگی آیلتس، تمرکز من بر مهارت ارتباطی واقعی در کنار تکنیک‌های اصولی آزمون است.",
+      "about.p2": "چه هدف شما کسب نمره مشخص آیلتس باشد، چه روانی مکالمه یا رشد در تدریس، مسیر جلسات متناسب با سطح فعلی شما طراحی می‌شود.",
+      "courses.eyebrow": "ثبت‌نام",
+      "courses.h2": "مسیر یادگیری خود را شروع کنید.",
+      "courses.lead": "برای رزرو مشاوره، اطلاع از دوره‌های جدید یا هماهنگی کلاس متناسب با هدف خود پیام دهید.",
+      "courses.tg": "پیام در تلگرام",
+      "resources.eyebrow": "منابع",
+      "resources.h2": "نکات آموزشی و کانال‌ها",
+      "resources.lead": "برای دریافت نکات هفتگی آیلتس، واژگان کاربردی و منابع کلاسی همراه ما باشید.",
+      "resources.li": "فاطمه مهدویان",
+      "homework.eyebrow": "تکالیف",
+      "homework.h2": "تمرین‌ها و تکالیف کلاسی",
+      "homework.lead": "ارسال تمرین‌ها و پاسخ به موضوعات تمرینی هفتگی به صورت مستقیم در کلاس یا پیام‌رسان انجام می‌شود.",
+      "footer.copy": "فاطمه مهدویان · آموزش زبان و آیلتس"
+    }
+  };
+
+  var LANGS = [
+    { code: "en", label: "English", native: "English" },
+    { code: "fa", label: "Persian", native: "فارسی" },
+    { code: "ar", label: "Arabic", native: "العربية" },
+    { code: "ur", label: "Urdu", native: "اردو" },
+    { code: "tr", label: "Turkish", native: "Türkçe" },
+    { code: "ru", label: "Russian", native: "Русский" },
+    { code: "hi", label: "Hindi", native: "हिन्दी" },
+    { code: "es", label: "Spanish", native: "Español" },
+    { code: "fr", label: "French", native: "Français" },
+    { code: "de", label: "German", native: "Deutsch" },
+    { code: "pt", label: "Portuguese", native: "Português" },
+    { code: "it", label: "Italian", native: "Italiano" },
+    { code: "zh", label: "Chinese", native: "简体中文" },
+    { code: "ja", label: "Japanese", native: "日本語" },
+    { code: "ko", label: "Korean", native: "한국어" },
+    { code: "id", label: "Indonesian", native: "Bahasa Indonesia" }
+  ];
+  var RTL = { fa: 1, ar: 1, ur: 1 };
+
+  function applyLang(code) {
+    var dict = I18N[code] || I18N.en;
+    document.documentElement.setAttribute("lang", code);
+    document.documentElement.setAttribute("dir", RTL[code] ? "rtl" : "ltr");
+    var lc = document.getElementById("langCode");
+    if (lc) lc.textContent = code.toUpperCase();
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      if (dict[k] !== undefined) el.textContent = dict[k];
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n-html");
+      if (dict[k] !== undefined) el.innerHTML = dict[k];
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n-aria");
+      if (dict[k] !== undefined) el.setAttribute("aria-label", dict[k]);
+    });
+    try { localStorage.setItem("fm-lang", code); } catch (e) {}
+    renderLangMenu(code);
+  }
+
+  function renderLangMenu(active) {
+    var menu = document.getElementById("langMenu");
+    if (!menu) return;
+    menu.innerHTML = "";
+    LANGS.forEach(function (item) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lang-item";
+      btn.setAttribute("aria-current", item.code === active ? "true" : "false");
+      btn.innerHTML = '<span>' + item.native + '</span><span class="text-xs text-muted font-mono">' + item.code.toUpperCase() + '</span>';
+      btn.addEventListener("click", function () {
+        applyLang(item.code);
+        menu.hidden = true;
+        var lb = document.getElementById("langBtn");
+        if (lb) lb.setAttribute("aria-expanded", "false");
+      });
+      menu.appendChild(btn);
+    });
+  }
+
+  var currentLang = window.__fmLang || document.documentElement.getAttribute("lang") || "en";
+  applyLang(currentLang);
+
+  var langBtn = document.getElementById("langBtn");
+  var langMenu = document.getElementById("langMenu");
+  if (langBtn && langMenu) {
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = langMenu.hidden;
+      langMenu.hidden = !open;
+      langBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", function (e) {
+      if (!langMenu.hidden && !e.target.closest("#langWrap")) {
+        langMenu.hidden = true;
+        langBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  function isDark() {
+    var attr = document.documentElement.getAttribute("data-theme");
+    if (attr === "dark") return true;
+    if (attr === "light") return false;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  function syncThemeIcons() {
+    var dark = isDark();
+    var moon = document.getElementById("iconMoon");
+    var sun = document.getElementById("iconSun");
+    if (moon) moon.hidden = dark;
+    if (sun) sun.hidden = !dark;
+  }
+
+  syncThemeIcons();
+  var themeBtn = document.getElementById("themeBtn");
+  if (themeBtn) {
+    themeBtn.addEventListener("click", function () {
+      var next = isDark() ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("fm-theme", next); } catch (e) {}
+      syncThemeIcons();
+    });
+  }
+
+  var menuBtn = document.getElementById("menuBtn");
+  var mobileNav = document.getElementById("mobileNav");
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener("click", function () {
+      var open = mobileNav.hidden;
+      mobileNav.hidden = !open;
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        mobileNav.hidden = true;
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
